@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="shortcut icon" href="img/isologo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Favoritos</title>
+</head>
+<body id="body">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg" id="navBar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/isologo.png" alt="Logo peliapp" width="40" height="40" class="d-inline-block align-text-top m-1">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item liNav">
+                            <a class="nav-link aNavBar" aria-current="page" href="favoritos.html">Favoritos</a>
+                        </li>
+                        <li class="nav-item liNav">
+                            <a class="nav-link aNavBar" href="trailers.html">Trailers</a>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+        <div class="container">
+            <h1 class="text-center my-4" id="title">Trailers</h1>
+            <p class="text-center text-light fs-5">Visualiza los trailer de los próximos estrenos</p>
+            <div class="divTrailer flex-column  d-flex">
+                <iframe class="frameTrailer my-4" src="https://www.youtube.com/embed/o5F8MOz_IDw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="frameTrailer my-4" src="https://www.youtube.com/embed/qEVUtrk8_B4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="frameTrailer my-4" src="https://www.youtube.com/embed/-cT495xKvvs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="frameTrailer my-4" src="https://www.youtube.com/embed/X-58cCAGmso" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <footer class="d-flex text-dark mt-auto" id="footer">
+            <div class="container">
+                <div class="row">
+                    <ul class="col my-2 list-unstyled text-center fs-5" id="ulFooter">
+                        <li>Aplicaciones Web Progresivas</li>
+                        <li>TP Nro 2</li>
+                        <li>DWN3AV</li>
+                        <li>Gonzalo Rubino</li>
+                        <li>Leandro MartínFernández Chapotot</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    <script src="favoritos.js"></script>
+    <script src="SWregister.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* 
+https://coolors.co/palette/00296b-003f88-00509d-fdc500-ffd500
+*/
+
+:root {
+    --black: #00509D;
+    --white: #FFFFFF;
+    --dblue: #00296B;
+    --yellow: #FFD500;
+    --gray: #E5E5E5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    background-color: var(--black);
+    color: var(--black);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#title {
+    font-size: 4rem;
+    color: var(--yellow);
+    font-weight: bolder;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#navBar {
+    background-color: var(--dblue);
+    color: var(--white);
+    padding: 0;
+}
+
+#logo {
+    color: var(--white);
+}
+
+.aNavBar {
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.aNavBar:hover {
+    color: var(--black);
+}
+
+.liNav:hover {
+    background-color: var(--yellow);
+    color: var(--black); 
+}
+
+input#search {
+    width: 85%;
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--gray);
+}
+
+button#botonSearch {
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    width: 40%;
+    margin: 1rem;
+}
+
+button#botonSearch:hover {
+    background-color: var(--yellow);
+    color: #000000;
+}
+
+button#botonSearch:active {
+    background-color: #bd7c15; 
+}
+
+#imgPelicula {
+    max-width: 20%;
+    margin-right: 1.5rem;
+    display: inline-block;
+}
+
+#tituloPelicula {
+    color: var(--yellow);
+}
+
+#card {
+    background-color: #1d1d1d; 
+    border-radius: 20px;
+}
+
+.cardFavorito {
+    background-color: #000000; 
+    border: #3f3f3f 0.2rem solid; 
+    color: var(--gray);
+    margin: 0;
+    width: 20%;
+}
+
+.botonFavoritos {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--gray);
+}
+
+.botonFavoritos:hover {
+    background-color: #274991; 
+    color: var(--white);
+}
+
+.botonFavoritos:active {
+    background-color: var(--dblue);
+    color: var(--white);
+}
+
+.botonBorrarFav {
+    border: none;
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    
+}
+
+.botonBorrarFav:hover {
+    background-color: #c41e1e; 
+    color: var(--white);
+}
+
+#footer {
+    background-color: var(--dblue);
+}
+
+#ulFooter {
+    color: var(--white);
+}
+
+#imgFavorito {
+    width: 100%;
+}
+
+#titleFav {
+    height: 50%
+}
+
+.pOffline {
+    background-color: #e44545; 
+    color: var(--white) ;
+}
+
+.frameTrailer {
+    height: 50vh;
+}
+
+@media (max-width: 768px) {
+
+    #title {
+        font-size: 2.5rem;
+    }
+
+    #card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imgPelicula {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .botonFavoritos {
+        width: 100%;
+    }
+
+    .cardFavorito {
+        width: 100%;
+    }
+
+    .frameTrailer {
+        height: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    input#search{
+        width: 100%;
+        margin: 1rem;
+    }
+}
