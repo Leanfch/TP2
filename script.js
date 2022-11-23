@@ -10,7 +10,7 @@ window.addEventListener('offline', e =>{
 botonSearch.addEventListener('click', (e) => {
     
     const search = document.getElementById('search');
-    fetch(`http://www.omdbapi.com/?apikey=3e59d425&s=${search.value}`)
+    fetch(`https://www.omdbapi.com/?apikey=3e59d425&s=${search.value}`)
     .then(response => response.json())
     .then(data => {
         peliculasBuscadas = data.Search;
